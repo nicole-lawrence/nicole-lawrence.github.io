@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>About: Nicole Lawrence</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <!-- Bootstrap core CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Nicole Lawrence</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main" class="container-fluid">
+    <div id="h1"></div>
+    <div id="img"></div>
+    <div id="content"></div>
+
+    <script>
+        const user = {
+            name: 'Nicole Lawrence',
+            imageUrl: 'images/about.jpeg',
+            bio: 'My name is Nicole. I\'m working on a degree in web design and development.' +
+                ' I actually currently work in web development as a full-stack software engineer.' +
+                ' I came to doing that shortly after college where I hadn\'t taken any web development ' +
+                'classes (beyond basic html and css) or done much structured learning, so I\'m interested ' +
+                'to see (and fill) the gaps in my knowledge from on the job learning in this class. ' +
+                'I also haven\'t much taken the time to develop my own website or just generally building ' +
+                'websites from scratch, so I\'m looking forward to the opportunity to do that as well. ' +
+                'Somewhat name of the game as a software engineer, but I am very familiar with version control, ' +
+                'git especially. I\'ve used it in each of my jobs for code management, and I think that the other ' +
+                'features of using GitHub (like actions, issues, etc) are also super helpful. A fun fact about me ' +
+                'is that I recently got a puppy, and I\'m slowly honing my skill of knowing when her silence means ' +
+                'she\'s taking a nap and when it means she\'s chewing on my shoes.'
+        };
+
+        // React elements
+        const nameElement = React.createElement('h1', null, user.name);
+        const imageElement = React.createElement('img', { src: user.imageUrl });
+        const bioElement = React.createElement('p', null, user.bio);
+
+        // Render react elements to the DOM
+        ReactDOM.render(
+            nameElement,
+            document.getElementById('h1')
+        );
+        ReactDOM.render(
+            imageElement,
+            document.getElementById('img')
+        );
+        ReactDOM.render(
+            bioElement,
+            document.getElementById('content')
+        );
+    </script>
+
+</main><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
