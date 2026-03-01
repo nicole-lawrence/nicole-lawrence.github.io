@@ -1,93 +1,126 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Carousel: Nicole Lawrence</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Nicole Lawrence web development class bootstrap carousel">
+  <meta name="author" content="Nicole Lawrence">
+  <title>Carousel: Nicole Lawrence</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Preload carousel images -->
+  <link rel="preload" as="image" href="images/Dog1.jpeg">
+  <link rel="preload" as="image" href="images/Dog2.jpeg">
+  <link rel="preload" as="image" href="images/Dog3.jpeg">
+  <link rel="preload" as="image" href="images/Dog4.jpeg">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Nicole Lawrence</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="grid.html">Grid</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="carousel.html">Carousel</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-        </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="grid.html">Grid</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="carousel.html">Carousel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<main role="main" class="container-fluid">
-    <h2>Carousel</h2>
-<!--Add carousel here-->
+  <main role="main" class="container-fluid">
+    <h1>Carousel</h1>
+    <!--Add carousel here-->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/Dog1.JPG" class="w-75" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Honey in the Sun</h5>
-        <p>December, 2025</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Dog1.jpeg" class="w-75" alt="Golden puppy laying in the sun">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Honey in the Sun</h5>
+            <p>December, 2025</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Dog2.jpeg" class="w-75" alt="Golden puppy laying in the house with a toy">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Honey Just Home</h5>
+            <p>November, 2025</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Dog3.jpeg" class="w-75" alt="Golden puppy napping in the sun">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Honey Napping in the Sun</h5>
+            <p>December, 2025</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Dog4.jpeg" class="w-75"
+            alt="Golden puppy laying in front of the Christmas tree with a toy that says 'My first Christmas'">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Honey's First Christmas</h5>
+            <p>December, 2025</p>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="images/Dog2.JPG" class="w-75" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Honey Just Home</h5>
-        <p>November, 2025</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/Dog3.JPG" class="w-75" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Honey Napping in the Sun</h5>
-        <p>December, 2025</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/Dog4.JPG" class="w-75" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Honey's First Christmas</h5>
-        <p>December, 2025</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-</main><!-- /.container -->
+  </main><!-- /.container -->
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="grid.html" class="nav-link px-2 text-body-secondary">Grid</a></li>
+      <li class="nav-item"><a href="carousel.html" class="nav-link px-2 text-body-secondary">Carousel</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2026 Nicole Lawrence</p>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
